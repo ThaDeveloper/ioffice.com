@@ -10,7 +10,7 @@ const FEATURES: Feature[] = [
   {
     icon: "graphic_eq",
     title: "Spatial audio",
-    body: "Conversations get louder as you move closer and fade as you step away, just like a real room. Huddle without booking a thing.",
+    body: "You hear the people in the space you've joined, and no one else. Drop into a room to talk, leave and the conversation stays private to whoever's inside. Huddle without booking a thing.",
   },
   {
     icon: "sensors",

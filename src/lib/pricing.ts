@@ -1,13 +1,6 @@
 /**
- * Pricing tiers shown on the landing page.
- *
- * ⚠️ DUPLICATED ON PURPOSE. These mirror the app's `PLANS` catalog
- * (packages/shared/src/billing/plans.ts) but live here because the landing site
- * is a separate repo. Keep the numbers in sync by hand for now.
- *
- * FUTURE: extract the app's plan catalog into a publishable package
- * (e.g. `@ioffice/pricing`) and replace this file's data with an import, so
- * marketing pricing can never drift from the product.
+ * Pricing tiers shown on the landing page. Duplicated from the app's PLANS
+ * catalog + "Plans & features" matrix (separate repo); keep in sync by hand.
  */
 
 export interface PricingTier {
@@ -35,10 +28,11 @@ export const PRICING_TIERS: PricingTier[] = [
     tagline: "For small teams getting started.",
     features: [
       "Up to 5 seats",
-      "Spatial audio & presence",
+      "Spatial audio on the open floor",
       "Hubs & direct messages",
-      "1 GB shared storage",
-      "14-day message history",
+      "Audio 1:1 calls",
+      "1 GB storage · 14-day history",
+      "Community support",
     ],
     cta: { label: "Get started free", kind: "secondary" },
   },
@@ -51,8 +45,9 @@ export const PRICING_TIERS: PricingTier[] = [
       "Unlimited seats",
       "Everything in Free, plus:",
       "Screen sharing",
-      "All meeting rooms",
+      "All rooms (Boardroom, Pods, Booths)",
       "25 GB storage · 1-year history",
+      "Email support",
     ],
     cta: { label: "Subscribe", kind: "secondary" },
   },
@@ -63,7 +58,7 @@ export const PRICING_TIERS: PricingTier[] = [
     tagline: "For teams that need video and scale.",
     features: [
       "Everything in Team, plus:",
-      "HD video calls",
+      "HD video (seats + calls)",
       "100 GB storage",
       "Unlimited message history",
       "Priority support",
@@ -78,9 +73,8 @@ export const PRICING_TIERS: PricingTier[] = [
     tagline: "For organizations with custom needs.",
     features: [
       "Everything in Business, plus:",
-      "Unlimited storage",
+      "Custom storage",
       "Custom pricing & contracts",
-      "Dedicated onboarding",
       "Dedicated support",
     ],
     cta: { label: "Contact sales", kind: "secondary" },
